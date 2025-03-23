@@ -100,13 +100,13 @@ $total_quizzes = $result_quizzes->fetch_assoc()["total_quizzes"];
         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">📝 Quizzes</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="my_quizzes.php">My Quizzes</a></li>
-            <li><a class="dropdown-item" href="take_quiz.php">Take a Quiz</a></li>
-            <li><a class="dropdown-item" href="quiz_history.php">Quiz History</a></li>
+           <!-- <li><a class="dropdown-item" href="take_quiz.php">Take a Quiz</a></li> -->
+            
         </ul>
     </div>
 
-    <!-- Settings -->
-    <a href="#">⚙️ Settings</a>
+    <!-- Certificate -->
+    <a href="my_certificate.php">📝Certificate</a>
 
     <!-- Logout -->
     <a href="signout.php" class="bg-danger text-center py-2">🚪 Logout</a>

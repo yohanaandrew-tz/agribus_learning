@@ -40,7 +40,7 @@ $progress_result = mysqli_query($conn, $progress_query);
                 <thead class="table-dark">
                     <tr>
                         <th>Course Title</th>
-                        <th>Progress</th>
+                        <th>Results(%)</th>
                         <th>Status</th>
                     </tr>
                 </thead>

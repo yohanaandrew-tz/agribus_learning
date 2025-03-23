@@ -51,7 +51,7 @@ require_once "dbconnect.php";
     <div class="container">
         <h3>Learn & Grow in Agribusiness</h3>
         <p>Join our platform and gain skills in farming, agribusiness finance, and more.</p>
-        <a href="#" class="btn btn-light btn-lg">Explore Courses</a>
+        <a href="explore_course.php" class="btn btn-light btn-lg">Explore Courses</a>
     </div>
 </section>
 

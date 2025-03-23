@@ -3,8 +3,8 @@ session_start();
 include 'dbconnect.php'; // Database connection
 
 // Check if user is logged in and is an instructor
-if (!isset($_SESSION["user_id"]) || $_SESSION["user_role"] != "Instructor") {
-    header("Location: sign_in.php");
+if (!isset($_SESSION["user_id"]) || $_SESSION["user_role"] != "Instructor" && $_SESSION["user_role"] != "Admin") {
+    header("Location: signin.php");
     exit();
 }
 

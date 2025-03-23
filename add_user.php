@@ -92,10 +92,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-6 mb-3">
                 <label class="form-label">User Role:</label>
                 <select name="role" class="form-control" required>
-                    <option value="Admin">Admin</option>
+                    <!--  <option value="Admin">Admin</option> -->
                     <option value="Instructor">Instructor</option>
                     <option value="Learner">Learner</option>
-                    <option value="Supplier">Supplier</option>
+                    <!-- <option value="Supplier">Supplier</option> -->
                 </select>
             </div>
         </div>

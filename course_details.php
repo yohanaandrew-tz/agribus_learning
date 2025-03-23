@@ -64,7 +64,7 @@ $lesson_result = mysqli_query($conn, $lesson_query);
 
             <!-- Start/Continue Learning Button -->
             <?php if ($learning) : ?>
-                <a href="learning_page.php?course_id=<?= $course_id; ?>" class="btn btn-success">Continue Learning</a>
+                <a href="take_quiz.php?course_id=<?= $course_id; ?>" class="btn btn-success">Continue Learning</a>
             <?php else : ?>
                 <a href="enroll_course.php?course_id=<?= $course_id; ?>" class="btn btn-primary">Start Learning</a>
             <?php endif; ?>

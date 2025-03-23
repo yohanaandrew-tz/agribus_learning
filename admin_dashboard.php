@@ -109,7 +109,7 @@ $total_quizzes = $result_quizzes->fetch_assoc()["total_quizzes"];
     <div class="dropdown">
         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">📚 Manage Courses</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">View Courses</a></li>
+            <li><a class="dropdown-item" href="admin_course_list.php">View Courses</a></li>
             <li><a class="dropdown-item" href="add_new_course.php">Add New Course</a></li>
         </ul>
     </div>
@@ -118,8 +118,8 @@ $total_quizzes = $result_quizzes->fetch_assoc()["total_quizzes"];
     <div class="dropdown">
         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">📖 Manage Lessons</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">View Lessons</a></li>
-            <li><a class="dropdown-item" href="#">Upload Lesson</a></li>
+            <li><a class="dropdown-item" href="lesson_list.php">View Lessons</a></li>
+            <li><a class="dropdown-item" href="add_lesson.php">Upload Lesson</a></li>
         </ul>
     </div>
 
@@ -127,8 +127,8 @@ $total_quizzes = $result_quizzes->fetch_assoc()["total_quizzes"];
     <div class="dropdown">
         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">📝 Manage Quizzes</a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">View Quizzes</a></li>
-            <li><a class="dropdown-item" href="#">Create Quiz</a></li>
+            <li><a class="dropdown-item" href="quiz_list.php">View Quizzes</a></li>
+            <li><a class="dropdown-item" href="create_quizze.php">Create Quiz</a></li>
         </ul>
     </div>
 
@@ -136,10 +136,15 @@ $total_quizzes = $result_quizzes->fetch_assoc()["total_quizzes"];
     <a href="system_reports.php">📊 System Reports</a>
 
     <!-- Settings -->
-    <a href="#">⚙️ Settings</a>
-
-    <!-- Logout -->
-    <a href="signout.php" class="bg-danger text-center py-2">🚪 Logout</a>
+    <!-- <a href="#">⚙️ Settings</a> -->
+    <!-- Profile Dropdown -->
+<div class="dropdown">
+        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">My Profile</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="my_profile.php">View</a></li>
+            <li><a class="dropdown-item" href="signout.php">🚪 Logout</a></li>
+        </ul>
+    </div>
 </div>
 
 <!-- Main Content -->
@@ -163,7 +168,7 @@ $total_quizzes = $result_quizzes->fetch_assoc()["total_quizzes"];
             </div>
             <div class="col-md-4">
                 <div class="card text-white bg-success mb-3">
-                    <a href="instructor_reports.php"><div class="card-header">Total Instructors</div></a>
+                    <div class="card-header">Total Instructors</div>
                     <div class="card-body">
                         <h5 class="card-title"><?= $total_instructors; ?> Instructors</h5>
                         <p class="card-text">Manage instructor accounts.</p>

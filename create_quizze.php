@@ -3,7 +3,7 @@ session_start();
 include 'dbconnect.php';
 
 // Ensure only instructors can access
-if (!isset($_SESSION["user_id"]) || $_SESSION["user_role"] != "Instructor") {
+if (!isset($_SESSION["user_id"]) || $_SESSION["user_role"] != "Instructor" && $_SESSION["user_role"] != "Admin") {
     header("Location: signin.php");
     exit();
 }
